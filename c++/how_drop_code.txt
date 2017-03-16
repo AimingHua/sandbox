@@ -1,0 +1,31 @@
+1. build git setup in linux
+   1.1 create a github accout, https://github.com
+   1.2 create ssh public key
+       ssh-keygen //always use default
+   1.3 add public key to Github
+       Account Settings->SSH Key
+   1.4 test 
+       ssh -t git@github.com
+       Hi aiminghua! You've successfully authenticated, but Github does not provide shell access.
+
+2. clone project
+   git clone git://github.com:aiminghua/sandbox.git //gitreadonly mode clone, readonly
+   git clone git@github.com:aiminghua/sandbox.git //ssh mode clone, read and write
+   git clone https://github.com/aiminghua/sandbox.git //https mode clone, read and write
+   git fetch git@github.com/aiminghua/sandbox.git //fetch to local but not merge
+   git pull git@github.com/aiminghua/sandbox.git //fetch and merge to local
+
+3. local configuration 
+   git config --global user.name "aiminghua"
+   git config --global user.email "ussthamcn@sina.com"
+
+4. create a git project and push to Github
+   mkdir testdir 
+   cd testdir
+   touch README.md
+   git init //initial a local repo
+   git add README.md //add file to local repo
+   git rm README.md //delete file on local repo
+   git commit -m "first commit" //submit to local repo
+   git commit -a //auto update changed files
+   git push -u remotename master //submit local file to Github repo
