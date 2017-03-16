@@ -28,4 +28,4 @@
    git rm README.md //delete file on local repo
    git commit -m "first commit" //submit to local repo
    git commit -a //auto update changed files
-   git push -u remotename master //submit local file to Github repo
+   git push //submit local file to Github repo
