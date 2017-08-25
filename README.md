@@ -1,2 +1,2 @@
 # sandbox
-this repo is used for c++ language study
+repo is used for c/c++ language

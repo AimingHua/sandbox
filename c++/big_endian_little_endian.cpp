@@ -61,7 +61,7 @@ void print_short()
 		printf("system is big endian\r\n");
 	else 
 		printf("system is little endian\r\n");
-    union
+        union
 	{
 		short i;
 		char c[2];
